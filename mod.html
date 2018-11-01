@@ -1,0 +1,957 @@
+<!DOCTYPE html/>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+		<title>DHIS2 Sumarised API Documentation - DoD</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+		<style>
+			blockquote{
+				transform: scale(0.92);
+			}
+		</style>
+	</head>
+		
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="">DHIS2 Sumarised API Documentation</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="javascript: history.go(-1)" class="pull-left">&larr; Back to DHIS2</a></li>				
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<h2>DHIS2 Sumarised API Documentation</h2>
+					<p>
+						This is a <em>summarised</em> list of all endpoints available on DHIS2, version <b>2.30</b>. The endpoints can be accessed in the two listed formats, <code>JSON</code> and <code>XML</code>. <br/>
+						Please note that authentication is not handled here, and will need to be configured before any of these are accessible.
+					</p>
+					<div class="alert alert-warning">
+						This documentation is not comprehensive in any way. Kindly refer to the official DHIS2 documentation for complete reference of all the functions and capabilities of the system.<br/>
+						<a href="https://docs.dhis2.org/" target="_blank">Official Documentation</a>
+					</div>
+					<hr style="border-color: #ccc; border-width: 2px;"/>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Indicator Types</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">indicatorType</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">indicatorTypes</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/indicatorTypes.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/indicatorTypes.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Tracked Entity Attribute Groups</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programTrackedEntityAttributeGroup</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programTrackedEntityAttributeGroups</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programTrackedEntityAttributeGroups.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programTrackedEntityAttributeGroups.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>File Resources</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">fileResource</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">fileResources</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/fileResources.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/fileResources.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Map Views</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">mapView</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">mapViews</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/mapViews.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/mapViews.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Indicators</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programIndicator</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programIndicators</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programIndicators.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programIndicators.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Data Approval Workflows</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dataApprovalWorkflow</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dataApprovalWorkflows</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataApprovalWorkflows.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataApprovalWorkflows.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Interpretations</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">interpretation</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">interpretations</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/interpretations.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/interpretations.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>O Auth2 Clients</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">oAuth2Client</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">oAuth2Clients</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/oAuth2Clients.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/oAuth2Clients.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Category Option Groups</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">categoryOptionGroup</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">categoryOptionGroups</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryOptionGroups.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryOptionGroups.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Validation Results</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">validationResult</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">validationResults</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/validationResults.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/validationResults.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Data Entry Forms</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dataEntryForm</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dataEntryForms</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataEntryForms.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataEntryForms.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Data Element Operands</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dataElementOperand</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dataElementOperands</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataElementOperands.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataElementOperands.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Rule Actions</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programRuleAction</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programRuleActions</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programRuleActions.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programRuleActions.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Organisation Unit Group Sets</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">organisationUnitGroupSet</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">organisationUnitGroupSets</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/organisationUnitGroupSets.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/organisationUnitGroupSets.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Dashboards</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dashboard</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dashboards</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dashboards.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dashboards.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Options</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">option</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">options</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/options.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/options.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Organisation Unit Groups</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">organisationUnitGroup</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">organisationUnitGroups</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/organisationUnitGroups.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/organisationUnitGroups.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Indicator Groups</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">indicatorGroup</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">indicatorGroups</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/indicatorGroups.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/indicatorGroups.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Documents</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">document</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">documents</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/documents.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/documents.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Data Sets</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dataSet</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dataSets</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataSets.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataSets.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Categories</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">category</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">categories</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categories.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categories.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Validation Rules</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">validationRule</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">validationRules</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/validationRules.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/validationRules.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Users</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">user</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">users</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/users.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/users.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Event Reports</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">eventReport</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">eventReports</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/eventReports.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/eventReports.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Sql Views</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">sqlView</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">sqlViews</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/sqlViews.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/sqlViews.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Push Analysis</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">pushAnalysis</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">pushAnalysis</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/pushAnalysis.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/pushAnalysis.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Constants</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">constant</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">constants</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/constants.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/constants.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Metadata Versions</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">metadataVersion</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">metadataVersions</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/metadata/version.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/metadata/version.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Data Element Groups</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dataElementGroup</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dataElementGroups</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataElementGroups.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataElementGroups.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Organisation Units</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">organisationUnit</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">organisationUnits</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/organisationUnits.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/organisationUnits.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Data Approval Levels</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dataApprovalLevel</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dataApprovalLevels</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataApprovalLevels.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataApprovalLevels.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Stages</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programStage</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programStages</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programStages.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programStages.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Validation Notification Templates</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">validationNotificationTemplate</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">validationNotificationTemplates</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/validationNotificationTemplates.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/validationNotificationTemplates.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Stage Sections</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programStageSection</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programStageSections</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programStageSections.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programStageSections.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Category Option Group Sets</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">categoryOptionGroupSet</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">categoryOptionGroupSets</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryOptionGroupSets.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryOptionGroupSets.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Category Options</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">categoryOption</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">categoryOptions</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryOptions.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryOptions.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Legend Sets</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">legendSet</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">legendSets</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/legendSets.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/legendSets.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>User Groups</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">userGroup</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">userGroups</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/userGroups.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/userGroups.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Notification Templates</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programNotificationTemplate</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programNotificationTemplates</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programNotificationTemplates.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programNotificationTemplates.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Validation Rule Groups</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">validationRuleGroup</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">validationRuleGroups</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/validationRuleGroups.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/validationRuleGroups.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>External File Resources</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">externalFileResource</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">externalFileResources</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/externalFileResources.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/externalFileResources.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Option Sets</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">optionSet</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">optionSets</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/optionSets.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/optionSets.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Organisation Unit Levels</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">organisationUnitLevel</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">organisationUnitLevels</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/organisationUnitLevels.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/organisationUnitLevels.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>External Map Layers</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">externalMapLayer</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">externalMapLayers</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/externalMapLayers.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/externalMapLayers.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Rules</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programRule</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programRules</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programRules.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programRules.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Attributes</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">attribute</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">attributes</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/attributes.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/attributes.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Data Elements</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programDataElement</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programDataElements</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programDataElements.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programDataElements.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Relationship Types</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">relationshipType</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">relationshipTypes</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/relationshipTypes.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/relationshipTypes.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Data Element Group Sets</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dataElementGroupSet</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dataElementGroupSets</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataElementGroupSets.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataElementGroupSets.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Indicator Group Sets</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">indicatorGroupSet</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">indicatorGroupSets</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/indicatorGroupSets.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/indicatorGroupSets.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>User Roles</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">userRole</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">userRoles</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/userRoles.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/userRoles.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Dashboard Items</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dashboardItem</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dashboardItems</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dashboardItems.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dashboardItems.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Charts</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">chart</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">charts</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/charts.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/charts.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Rule Variables</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programRuleVariable</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programRuleVariables</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programRuleVariables.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programRuleVariables.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Event Charts</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">eventChart</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">eventCharts</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/eventCharts.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/eventCharts.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Option Group Sets</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">optionGroupSet</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">optionGroupSets</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/optionGroupSets.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/optionGroupSets.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Program Indicator Groups</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">programIndicatorGroup</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programIndicatorGroups</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programIndicatorGroups.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programIndicatorGroups.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Category Combos</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">categoryCombo</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">categoryCombos</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryCombos.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryCombos.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Predictors</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">predictor</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">predictors</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/predictors.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/predictors.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Category Option Combos</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">categoryOptionCombo</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">categoryOptionCombos</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryOptionCombos.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/categoryOptionCombos.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Tracked Entity Attributes</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">trackedEntityAttribute</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">trackedEntityAttributes</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/trackedEntityAttributes.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/trackedEntityAttributes.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Option Groups</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">optionGroup</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">optionGroups</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/optionGroups.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/optionGroups.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Programs</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">program</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">programs</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programs.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/programs.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Min Max Data Elements</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">minMaxDataElement</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">minMaxDataElements</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/minMaxDataElements.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/minMaxDataElements.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Message Conversations</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">messageConversation</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">messageConversations</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/messageConversations.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/messageConversations.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Reports</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">report</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">reports</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/reports.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/reports.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Tracked Entity Instances</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">trackedEntityInstance</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">trackedEntityInstances</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/trackedEntityInstances.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/trackedEntityInstances.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Tracked Entities</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">trackedEntity</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">trackedEntities</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/trackedEntities.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/trackedEntities.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Data Elements</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">dataElement</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">dataElements</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataElements.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/dataElements.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Report Tables</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">reportTable</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">reportTables</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/reportTables.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/reportTables.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Maps</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">map</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">maps</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/maps.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/maps.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Sections</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">section</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">sections</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/sections.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/sections.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold text-info"><b>Color Sets</b></h4>
+					<blockquote>
+						Singular: <label class="label label-info">colorSet</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">colorSets</label>
+						<br/><br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/colorSets.json</code>
+						<br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/colorSets.xml</code>
+					</blockquote>
+					<hr/>
+				</div>
+				<div class="col-md-12">
+					<h4 class="text-bold">Indicators</h4><br/>
+					<blockquote>
+						Singular: <label class="label label-info">indicator</label> &nbsp; &nbsp;
+						Plural: <label class="label label-info">indicators</label>
+						<br/>JSON: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/indicators.json</code>
+						<br/><br/>XML: &nbsp;
+						<code>https://dhis.mod.go.ke/dhismod/api/indicators.xml</code>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+		<footer class="text-center">
+			<br/>
+			<p>&copy; <script type="text/javascript"> var today = new Date(); var year = today.getFullYear(); document.write(year); </script> &middot; DOD DHIS2</p>
+		</footer>
+			
+			
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>
